@@ -183,13 +183,17 @@ async def get_details(message: types.Message, state: FSMContext):
     )
 
     payment_info = (
-        "💳 <b>Payment Instructions:</b>\n\n"
-        "<code>"
-        "UPI: maurya0987@fam\n"
-        "Name: Arvind Maurya\n"
-        "Note: VPS OWNER @Rudra_ll\n"
-        "</code>\n\n"
-        "Payment karne ke baad, yaha <b>payment ka screenshot</b> (photo) bhejo."
+       "💳 <b>Payment Instructions:</b>\n\n"
+       
+        "<b>UPI ID:</b> <code>maurya0987@fam</code>\n"
+      
+        "<b>Name:</b> <code>Arvind Maurya</code>\n"
+       
+        "<b>Note:</b> <code>VPS OWNER @Rudra_ll</code>\n\n"
+       
+        "👇 Kisi bhi line ko long-press karke copy kar lo.\n"
+        
+        "Payment karne ke baad, yaha <b>payment ka screenshot</b> bhejo."
     )
 
     await BuyVPS.waiting_for_payment_proof.set()
