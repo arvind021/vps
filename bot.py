@@ -10,8 +10,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================== CONFIG ==================
-BOT_TOKEN = "PUT_YOUR_BOT_TOKEN_HERE"  # @BotFather se token
-ADMIN_ID = 123456789  # yaha apna Telegram numeric ID (int)
+BOT_TOKEN = "8591422077:AAF9ITJeatmFQSySRiTyZRJtncyoRb3_kNQ"  # @BotFather se token
+ADMIN_ID =  7459732827  # yaha apna Telegram numeric ID (int)
 
 PLANS_FILE = "plans.json"
 
@@ -184,11 +184,11 @@ async def get_details(message: types.Message, state: FSMContext):
 
     payment_info = (
         "💳 <b>Payment Instructions:</b>\n\n"
-    "<code>"
-    "UPI: maurya0987@fam\n"
-    "Name: Arvind Maurya\n"
-    "Note: VPS OWNER @Rudra_ll\n"
-    "</code>\n\n"
+        "<code>"
+        "UPI: maurya0987@fam\n"
+        "Name: Arvind Maurya\n"
+        "Note: VPS OWNER @Rudra_ll\n"
+        "</code>\n\n"
         "Payment karne ke baad, yaha <b>payment ka screenshot</b> (photo) bhejo."
     )
 
