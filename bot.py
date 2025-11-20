@@ -82,7 +82,7 @@ class AdminChangePrice(StatesGroup):
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
     text = (
-        "👋 <b>Welcome to VPS Shop Bot</b>\n\n"
+        "👋 <b>Welcome to kartik VPS Shop Bot</b>\n\n"
         "Yaha se aap apni zaroorat ke hisaab se VPS khareed sakte ho.\n\n"
         "👇 Neeche button se plans dekh sakte ho."
     )
