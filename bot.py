@@ -183,11 +183,12 @@ async def get_details(message: types.Message, state: FSMContext):
     )
 
     payment_info = (
-        "💳 <b>Payment Instructions:</b>\n"
-        "Yaha apni UPI / Bank details likho (code me edit karo):\n\n"
-        "<code>UPI: your-upi-id@bank\n"
-        "Name: Your Name\n"
-        "Note: VPS + apna Telegram username likho</code>\n\n"
+        "💳 <b>Payment Instructions:</b>\n\n"
+    "<code>"
+    "UPI: maurya0987@fam\n"
+    "Name: Arvind Maurya\n"
+    "Note: VPS OWNER @Rudra_ll\n"
+    "</code>\n\n"
         "Payment karne ke baad, yaha <b>payment ka screenshot</b> (photo) bhejo."
     )
 
