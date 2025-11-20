@@ -182,7 +182,7 @@ async def get_details(message: types.Message, state: FSMContext):
         f"📄 Details:\n<code>{details_text}</code>\n\n"
     )
 
-   payment_info = (
+payment_info = (
     "💳 <b>Payment Instructions:</b>\n\n"
     "<code>"
     "UPI: maurya0987@fam\n"
