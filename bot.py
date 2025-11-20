@@ -10,8 +10,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================== CONFIG ==================
-BOT_TOKEN = "8591422077:AAF9ITJeatmFQSySRiTyZRJtncyoRb3_kNQ"  # @BotFather se token
-ADMIN_ID = 7459732827  # yaha apna Telegram numeric ID (int)
+BOT_TOKEN = "PUT_YOUR_BOT_TOKEN_HERE"  # @BotFather se token
+ADMIN_ID = 123456789  # yaha apna Telegram numeric ID (int)
 
 PLANS_FILE = "plans.json"
 
@@ -82,7 +82,7 @@ class AdminChangePrice(StatesGroup):
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
     text = (
-        "👋 <b>Welcome to kartik VPS Shop Bot</b>\n\n"
+        "👋 <b>Welcome to VPS Shop Bot</b>\n\n"
         "Yaha se aap apni zaroorat ke hisaab se VPS khareed sakte ho.\n\n"
         "👇 Neeche button se plans dekh sakte ho."
     )
@@ -182,15 +182,14 @@ async def get_details(message: types.Message, state: FSMContext):
         f"📄 Details:\n<code>{details_text}</code>\n\n"
     )
 
-payment_info = (
-    "💳 <b>Payment Instructions:</b>\n\n"
-    "<code>"
-    "UPI: maurya0987@fam\n"
-    "Name: Arvind Maurya\n"
-    "Note: VPS OWNER @Rudra_ll\n"
-    "</code>\n\n"
-    "Payment karne ke baad, yaha <b>payment ka screenshot</b> (photo) bhejo."
-)
+    payment_info = (
+        "💳 <b>Payment Instructions:</b>\n"
+        "Yaha apni UPI / Bank details likho (code me edit karo):\n\n"
+        "<code>UPI: your-upi-id@bank\n"
+        "Name: Your Name\n"
+        "Note: VPS + apna Telegram username likho</code>\n\n"
+        "Payment karne ke baad, yaha <b>payment ka screenshot</b> (photo) bhejo."
+    )
 
     await BuyVPS.waiting_for_payment_proof.set()
     await message.answer(summary + payment_info)
