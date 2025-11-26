@@ -10,8 +10,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================== CONFIG ==================
-BOT_TOKEN = "8591422077:AAF9ITJeatmFQSySRiTyZRJtncyoRb3_kNQ"  # @BotFather se token
-ADMIN_ID =  7459732827  # yaha apna Telegram numeric ID (int)
+BOT_TOKEN = "8471327440:AAFRh_dl-nQwgzh7FLOOY8VJ05K8cAU4HMo"  # @BotFather se token
+ADMIN_ID =  7875650103  # yaha apna Telegram numeric ID (int)
 
 PLANS_FILE = "plans.json"
 
